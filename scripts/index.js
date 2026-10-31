@@ -381,18 +381,18 @@ function initializeChangelogSearch() {
     });
 }
 
-// Parse first line of version_changelog.txt: "DD.MM.YYYY be vX.XX" -> { version: "OSP2-BE X.XX", date: "DD.MM.YYYY" }
+// Parse first line of version_changelog.txt: "DD.MM.YYYY be vX.XX" -> { version: "X.XX", date: "DD.MM.YYYY" }
 function parseVersionChangelogLine(line) {
     const m = line.match(/^(\d{2}\.\d{2}\.\d{4})\s+be\s+v(.+)$/);
     if (!m) return { version: '', date: '' };
-    return { version: 'OSP2-BE ' + m[2].trim(), date: m[1] };
+    return { version: m[2].trim(), date: m[1] };
 }
 
 // Load version and date from mirrored version_changelog.txt (первая строка: "DD.MM.YYYY be vX.XX")
 async function loadVersion() {
     const versionEl = document.getElementById('version-text');
     const dateEl = document.getElementById('version-date');
-    const fallbackVersion = 'OSP2-BE 1.10';
+    const fallbackVersion = '1.10';
     try {
         const text = (await fetchOsp2BeText('version_changelog.txt')).trim();
         const firstLine = text.split(/\r?\n/)[0]?.trim() || '';
