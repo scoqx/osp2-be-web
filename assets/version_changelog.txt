@@ -1,2 +1,2 @@
-31.10.2026 be v1.10
-+ OSP2-BE 1.10 release
+31.10.2026 be v1.10a
+- Status server disabled
