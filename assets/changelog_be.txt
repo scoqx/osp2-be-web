@@ -1120,3 +1120,8 @@ SuperHUD:
 
 02.11.2026 be v1.10b
 + OSP2 Synchronization
+
+05.11.2026 be v1.10b-beta
++ Colorable weapon's flash
+* Performance optimisation
+* Various fixes
