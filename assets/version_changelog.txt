@@ -1,11 +1,3 @@
-12.11.2026 be v1.10c-beta5
-+ Killcam improved
-+ cg_lightningImpactCap (from QL)
-+ cg_blackBlood 0/1
-+ Hitscan hit prediction (cg_predictHitscan 0/1/2)
-+ New blood shaders (explosion/screen/sprut/stain)
-+ QL Movement/Weapon Prediction
-+ Projectile prediction fix 
-+ Rail 3rd person beam fix? (QL)
-- cg_railFix (fix implented)
-+ beinfo.cfg: hex colors RGB/RGBA/RRGGBB/RRGGBBAA, optional # or 0x prefix
+14.11.2026 be v1.10c-beta6
++ Various fixes
+* cg_altBlood overrides cg_blackBlood on hits
