@@ -1,3 +1,2 @@
-14.11.2026 be v1.10c-beta6
+15.11.2026 be v1.10c-beta7
 + Various fixes
-* cg_altBlood overrides cg_blackBlood on hits
