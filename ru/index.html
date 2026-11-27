@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSP2-BE</title>
     <link rel="icon" href="/assets/blender_180.png" type="image/png">
-    <link rel="stylesheet" href="/styles/style.css?v=1.4">
+    <link rel="stylesheet" href="/styles/style.css?v=1.5">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -70,19 +70,22 @@
                                 </a>
                             </span>
                         </div>
-                        <div class="contact-row">
-                            <img src="/assets/telegram.png" alt="Telegram icon" />
-                            <strong>Сообщество:</strong>
-                            <a href="https://t.me/q3_osp2" target="_blank" rel="noopener noreferrer">Чат OSP2</a>
+                        <div class="community-panel">
+
+
+                            <div class="community-links">
+
+                                <a class="community-btn" href="https://t.me/q3_osp2" target="_blank" rel="noopener noreferrer"><img class="icon-default" src="/assets/telegram.png" alt="" /><img class="mono-icon icon-hover" src="/assets/telegram-mono.svg" alt="" />Telegram</a>
+
+                                <a class="community-btn" href="https://discord.gg/wJg9gCc8n9" target="_blank" rel="noopener noreferrer"><img class="mono-icon" src="/assets/discord.svg" alt="" />Discord</a>
+
+                                <a class="community-btn" href="/ru/acknowledgements.html"><img class="mono-icon" src="/assets/acknowledge.png" alt="" />Благодарности</a>
+
+                                <a class="community-btn community-btn-support" href="#" onclick="openSupportModal(); return false;"><img class="mono-icon" src="/assets/coin.png" alt="" />Поддержать проект</a>
+
+                            </div>
+
                         </div>
-                        <div class="contact-row">
-                            <img src="/assets/acknowledge.png" alt="Благодарности" style="width: 20px; height: 20px; object-fit: contain;" />
-                            <strong><a href="/ru/acknowledgements.html" class="donate-link">Благодарности</a></strong>
-                        </div>
-                        <!-- <div class="contact-row">
-                            <img src="/assets/coin.png" alt="Coin icon" style="width: 20px; height: 20px; object-fit: contain;" />
-                            <strong><a href="#" onclick="openSupportModal(); return false;" class="donate-link">Поддержать проект</a></strong>
-                        </div> -->
                     </div>
                 </div>
 
@@ -174,7 +177,7 @@
     <script src="/scripts/support-modal.js?v=1.3"></script>
     
     <!-- Главное модальное окно поддержки -->
-    <!-- <div class="donation-modal" id="supportModal">
+    <div class="donation-modal" id="supportModal">
         <div class="donation-modal-content">
             <button class="donation-modal-close" id="closeSupportModal">&times;</button>
             <h3>Поддержать проект</h3>
@@ -193,7 +196,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
         <!-- Модальное окно DonationAlerts -->
         <div class="donation-modal" id="donationModal">

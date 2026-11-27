@@ -2886,3 +2886,65 @@ html[lang="en"] .crypto-address.copied::after {
     text-shadow: 0 0 8px #ffffff;
     text-decoration: none;
 }
+
+/* ==========================================================================
+   Community & support buttons (home page)
+   ========================================================================== */
+
+.contact-info .community-panel {
+    margin-top: var(--spacing-md);
+}
+
+.contact-info .community-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.contact-info .community-links .community-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: #111111;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.contact-info .community-links .community-btn img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.contact-info .community-links .community-btn:hover {
+    background: var(--button-bg);
+    color: var(--button-text);
+    text-shadow: none;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+.contact-info .community-links .community-btn-support {
+    background: var(--button-bg);
+    color: var(--button-text);
+}
+
+.contact-info .community-links .community-btn-support .mono-icon,
+.contact-info .community-links .community-btn:hover .mono-icon {
+    filter: invert(1);
+}
+
+.contact-info .community-links .community-btn .icon-hover,
+.contact-info .community-links .community-btn:hover .icon-default {
+    display: none;
+}
+
+.contact-info .community-links .community-btn:hover .icon-hover {
+    display: inline-block;
+}
