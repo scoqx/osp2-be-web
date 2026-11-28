@@ -1165,7 +1165,7 @@ SuperHUD:
 15.11.2026 be v1.10c-beta7
 + Various fixes
 
-27.11.2026 be v1.10c
+27.11.2026 be v1.10c1
 + New Game Menu (be_newMenu 1)
   + All mod settings in one place, with descriptions
   + Player setup: model, skin and colors with live preview
@@ -1181,7 +1181,7 @@ SuperHUD:
 + Weapon predict improvements
 + cg_teamModelFilter (own models of teammates, unwanted ones hidden)
 + Stuck player name in crosshair info fix
-+ Server side - OSP1.3be (Modifiled OSP1.03a)
++ Server side - OSP1.03be (Modifiled OSP1.03a)
   + Damage Plums support
   + Colorable missiles
   + q3dm0 fix
